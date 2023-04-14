@@ -14,7 +14,6 @@ import {
 import Login from "./Components/Pages/Login";
 import Cart from "./Components/Pages/Cart";
 import Register from "./Components/Pages/Register";
-import { useSelector } from "react-redux";
 
 const Layout = () => {
   return (
@@ -27,8 +26,6 @@ const Layout = () => {
   );
 };
 function App() {
-  const userInfo = useSelector((state) => state.amazon.userInfo);
-
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route>

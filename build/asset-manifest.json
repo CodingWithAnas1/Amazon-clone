@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3a7ba0d4.css",
+    "main.js": "/static/js/main.aa4843db.js",
+    "static/media/banner2.jpg": "/static/media/banner2.efbb012eca96acc631d4.jpg",
+    "static/media/banner6.jpg": "/static/media/banner6.bcee394f6954bf0eeca4.jpg",
+    "static/media/banner4.jpg": "/static/media/banner4.51d70583586f6b27a865.jpg",
+    "static/media/banner3.jpg": "/static/media/banner3.a1bcb082f3d017e44539.jpg",
+    "static/media/banner1.jpg": "/static/media/banner1.5d0e3f7bd784842bad4d.jpg",
+    "static/media/amazonlogo.png": "/static/media/amazonlogo.6b1fcc03bc93beb438e1.png",
+    "static/media/banner5.jpg": "/static/media/banner5.dfce705ce83440145101.jpg",
+    "static/media/amazonlogo2.png": "/static/media/amazonlogo2.79a1dd45e47017ffa5da.png",
+    "static/media/flag.webp": "/static/media/flag.e8c74f55899699a2a20e.webp",
+    "static/media/cart.webp": "/static/media/cart.4d0154b0a2c9fe9f2c5d.webp",
+    "index.html": "/index.html",
+    "main.3a7ba0d4.css.map": "/static/css/main.3a7ba0d4.css.map",
+    "main.aa4843db.js.map": "/static/js/main.aa4843db.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a7ba0d4.css",
+    "static/js/main.aa4843db.js"
+  ]
+}
