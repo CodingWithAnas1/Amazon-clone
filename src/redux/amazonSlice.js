@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   products: [],
+  query: null,
   userInfo: null,
 };
 
@@ -43,6 +44,9 @@ export const amazonSlice = createSlice({
     userLogout: (state) => {
       state.userInfo = null;
     },
+    setQuery: (state, action) => {
+      state.query = action.payload;
+    },
   },
 });
 
@@ -54,6 +58,7 @@ export const {
   decreamentQuantity,
   setUserInfo,
   userLogout,
+  setQuery,
 } = amazonSlice.actions;
 
 export default amazonSlice.reducer;

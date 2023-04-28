@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { logo } from "../../assets/index";
 import { GoLocation } from "react-icons/go";
 import { IoMdArrowDropdown } from "react-icons/io";
@@ -10,9 +10,14 @@ import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getAuth, signOut } from "firebase/auth";
 import { toast } from "react-toastify";
-import { userLogout } from "../../redux/amazonSlice";
+import { setQuery, userLogout } from "../../redux/amazonSlice";
 
 const Header = () => {
+  const query = useSelector((state) => state.amazon.query);
+  function onvaluechange(e) {
+    // dispatch(setQuery((e.target.value = "")));
+    dispatch(setQuery(e.target.value));
+  }
   const auth = getAuth();
   const dispatch = useDispatch();
   const [showAll, setShowAll] = useState(false);
@@ -72,6 +77,8 @@ const Header = () => {
           <input
             className="h-full text-base text-amazon_blue flex flex-grow outline-none border-none px-2"
             type="text"
+            value={query}
+            onChange={onvaluechange}
           />
           <span className="w-12 h-full flex items-center justify-center bg-amazon_yellow hover:bg-[#f3a847] duration-300 text-amazon_blue cursor-pointer rounded-tr-md rounded-br-md">
             <AiOutlineSearch size={20} />
